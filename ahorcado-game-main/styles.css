@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+nav {
+  align-items: center;
+  background-color: #2c3a47;
+  display: flex;
+  justify-content: center;
+  height: 8vh;
+}
+
+body {
+  background-color: #9aecdb;
+  font-family: Cascadia Code PL;
+}
+
+p {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: auto 5px;
+}
+
+.contenedor-juego {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  width: 100%;
+}
+
+label,
+input {
+  font-family: Cascadia Code PL;
+  margin-right: 10px;
+}
+
+label,
+.btn-submit,
+input,
+.reinicio {
+  font-size: 1.8rem;
+}
+
+.btn-submit {
+  display: inline;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-principal {
+  margin-bottom: 40px;
+}
+
+.ahorcado-img {
+  background-image: url(img/hangman-game_pm-1024x212.png);
+  background-repeat: no-repeat;
+  height: 220px;
+  margin-right: 40px;
+  width: 200px;
+  /*background-position: -199px;*/
+}
+
+.contenedor-palabra {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.letra-guion {
+  margin: 5px;
+}
+.letra {
+  font-size: 35px;
+  visibility: hidden;
+}
+
+.guion {
+  background-color: black;
+  border-radius: 100%;
+  margin-top: 5px;
+  height: 3px;
+  width: 25px;
+}
+
+.activate {
+  visibility: visible;
+}

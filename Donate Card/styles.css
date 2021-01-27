@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff5f3;
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.box{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05),
+                 0 6px 6px rgba(0,0,0,0.1);
+    padding: 40px 60px;
+    position: relative;
+}
+.box::before{
+    background-color: #ff3d44;
+    border-radius: 30px;
+    content:'';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    height: 220px;
+    width: 220px;
+    z-index: -1;
+}
+.box img{
+    display: block;
+    margin-top: -70px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+.box h2{
+    margin: 0;
+}
+.box p{
+    line-height: 24px;
+}
+.btn{
+    background-color: purple;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05),
+                 0 6px 6px rgba(0,0,0,0.1);
+    color: white;
+    display: inline-block;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.btn.paypal{
+    background-color: #0070ba;
+    margin-right: 10px;
+}
+.btn.patreon{
+    background-color: #e85b46;
+}

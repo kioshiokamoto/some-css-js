@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e9bc32;    
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.box{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    animation: animationIn 1.75s;
+}
+.box h2{
+    margin: 10px 0 0;
+}
+.box p{
+    color: #321940;
+    margin: 10px;
+}
+.box img{
+    width: 400px;
+    max-width: 100%;
+}
+.form-control{
+    position: relative;
+    margin: 30px 0 20px;
+}
+.input{
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); 
+    font-family: inherit;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 15px;
+    width: 100%;
+}
+.btn{
+    background-color: #312940;
+    border: 0;
+    border-radius:50px ;
+    color: #fff;
+    height: 42px;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.input::focus, .btn::focus{
+    outline: 0;
+}
+@keyframes animationIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
