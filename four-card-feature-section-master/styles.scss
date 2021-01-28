@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	background-color: $Very-Light-Gray;
+	min-height: 100vh;
+    padding-top: 85px;
+    
+    @media(max-width: 768px){
+        padding: 30px;
+    }
+}
+main {
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    
+	h1 {
+		text-align: center;
+		font-size: 2.5em;
+		font-weight: 200;
+		color: $Very-Dark-Blue;
+		span {
+			display: block;
+			font-weight: bold;
+		}
+	}
+	p {
+		max-width: calc(1440px / 2);
+		margin-left: auto;
+        margin-right: auto;
+        color: $Grayish-Blue;
+    }
+    section{
+        article:nth-child(1){
+            transform: translateY(50%);
+            border-top-color: $Cyan;
+        }
+        article:nth-child(3){
+            transform: translateY(50%);
+            border-top-color: $Blue;
+        }
+        article:nth-child(4){
+            border-top-color: $Orange;
+        }
+        @media(max-width: 768px){
+            article:nth-child(1){
+                transform: translateY(0%);
+
+            }
+            article:nth-child(3){
+                transform: translateY(0%);
+            }
+            
+        }
+    }
+    article{
+        width: 25%;
+        height: 250px;
+        display: inline-block;
+        margin-bottom: 15px;
+        background: white;
+        position: relative;
+        text-align: left;
+        padding: 15px;
+        padding-right: 30px;
+        color: $Grayish-Blue;
+        border-top: 5px solid $Red;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px rgba($Grayish-Blue, 0.4);
+        margin: 15px;
+        @media(max-width: 768px){
+            margin: 0px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        h2{
+            color: $Very-Dark-Blue;
+            margin-bottom: 5px;
+        }
+        img{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+    
+}
