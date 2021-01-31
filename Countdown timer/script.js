@@ -15,6 +15,7 @@ let valor; // Se asigna el tiempo para el contdown
 let valorReseteo = defecto;
 let interval; // Contendra intervalo
 
+//Falta restringir si le dan 2 veces a iniciar!
 function pomodoro() {
 	interval = setInterval(() => {
 		let minutes = Math.floor(valor / 60);
@@ -28,6 +29,7 @@ function pomodoro() {
 			valor--;
 		}
 	}, 1000);
+
 }
 
 botonDefecto.addEventListener('click', () => {
