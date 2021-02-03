@@ -7,6 +7,10 @@
     margin: 0;
     font-family: 'Sora', sans-serif;
 }
+::selection{
+    background: #00d3b5;
+    color: #fff;
+}
 
 .hero{
     background-color: $light;
