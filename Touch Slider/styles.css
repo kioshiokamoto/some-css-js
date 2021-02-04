@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* Fuentes: 
+    - Montserrat
+    - Nunito
+    - Poppins
+    - Sora
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: 'poppins',sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.7;
+
+}
+.slider-container{
+    height: 100vh;
+    display: inline-flex;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+}
+.slide{
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    user-select:none;
+}
+
+.slide img{
+    max-width: 100%;
+    max-height: 60%;
+}
+.slide h2{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.slide h4{
+    font-size: 1.3rem;
+}
+.btn{
+    background-color: #444;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    margin-top: 10px;
+}
+.grabbing{
+    cursor: grabbing;
+}
+.grabbing .slide img{
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
