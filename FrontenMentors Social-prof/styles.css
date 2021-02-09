@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
+
+:root {
+	--Very-Dark-Magenta: hsl(300, 43%, 22%);
+	--Soft-Pink: hsl(333, 80%, 67%);
+	--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+	--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+	--White: hsl(0, 0%, 100%);
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Spartan', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: var(--White);
+}
+.pattern-top {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url('./images/bg-pattern-top-desktop.svg');
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+.pattern-bottom {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url('./images/bg-pattern-bottom-desktop.svg');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.main .main--left {
+	width: 480px;
+}
+.main .main--left h1 {
+	color: var(--Very-Dark-Magenta);
+	font-weight: 700;
+	font-size: 2.8rem;
+}
+.main .main--left p {
+	color: var(--Dark-Grayish-Magenta);
+	font-size: 1rem;
+	font-weight: 400;
+}
+.main .main--right {
+}
+.main .main--right .row {
+	background: var(--Light-Grayish-Magenta);
+	padding: 20px 30px;
+	display: flex;
+	align-items: center;
+
+	margin-top: 15px;
+	border-radius: 5px;
+}
+.main .main--right .row:nth-child(1) {
+	transform: translateX(-100px);
+}
+.main .main--right .row:nth-child(2) {
+	transform: translateX(-50px);
+}
+.main .main--right .row .stars img {
+	padding: 0 3px;
+}
+.main .main--right .row .text {
+	color: var(--Very-Dark-Magenta);
+	font-weight: 500;
+	margin: 0 30px 0 20px;
+}
+.cards {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 85px;
+}
+.cards .card {
+	background: var(--Very-Dark-Magenta);
+	border-radius: 10px;
+	width: 420px;
+	margin: 0 10px;
+	padding: 35px 30px;
+}
+.cards .card .name {
+	display: flex;
+	align-items: center;
+}
+.cards .card:nth-child(2) {
+	transform: translateY(25px);
+}
+.cards .card:nth-child(3) {
+	transform: translateY(50px);
+}
+.cards .card .name img {
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+}
+.cards .card .name div {
+	margin-left: 20px;
+}
+.cards .card .name h4 {
+	color: var(--Light-Grayish-Magenta);
+	font-weight: 500;
+	margin-bottom: -15px;
+}
+.cards .card .name h5 {
+	color: var(--Soft-Pink);
+	font-weight: 400;
+}
+.cards .card p {
+	color: var(--Light-Grayish-Magenta);
+	font-weight: 500;
+	line-height: 25px;
+}
+@media screen and (max-width: 1440px) {
+    .container{
+        height: 100%;
+        padding: 30px 20px;
+    }
+    .pattern-top {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('./images/bg-pattern-top-mobile.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .pattern-bottom {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('./images/bg-pattern-bottom-mobile.svg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 20px;
+    }
+    .main .main--left{
+        width: 100%;
+        text-align: center;
+    }
+  
+    .main .main--right{
+        width: 100%;
+    }
+    .main .main--right .row{
+        flex-direction: column;
+    }
+    .main .main--right .row .stars{
+        margin-bottom: 10px;
+    }
+    .main .main--right .row:nth-child(1){
+        transform: translateX(0);  
+    }
+    .main .main--right .row:nth-child(2){
+        transform: translateX(0);  
+    }
+
+	.cards {
+		display: flex;
+        flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		margin-top: 30px;
+	}
+    .cards .card{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .cards .card:nth-child(2){
+        transform: translateY(0);
+    }
+    .cards .card:nth-child(3){
+        transform: translateY(0);
+    }
+}
