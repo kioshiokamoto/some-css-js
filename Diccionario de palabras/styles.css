@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1a576;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e47632;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc5a1;
+  }
+  
+  .h1 {
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .search-field {
+    padding: 10px;
+    width: 500px;
+    font-size: 20px;
+    color: #1e1e1e;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #1e1e1e;
+  }
+  
+  .result {
+    display: none;
+    margin-top: 20px;
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 30px;
+    overflow-y: scroll;
+    border-left: 5px solid #e66a1e;
+  }
+  
+  .result > h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: inline;
+  }
+  
+  .wordmeaning {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .phonetics {
+    display: inline-block;
+    background-color: #ffc5a1;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .result > audio {
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  
+  .word-definition {
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .synonyms {
+    display: flex;
+    font-size: 22px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .pills {
+    margin-right: 10px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #ffc5a1;
+  }
+  
+  /* your media query here */
+  @media only screen and (max-width: 500px) {
+    .container {
+      padding: 20px;
+    }
+    .search-field,
+    .result {
+      width: 100%;
+    }
+  }
