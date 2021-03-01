@@ -22,7 +22,7 @@ body{
 }
 .wrapper .dynamic-txts{
   margin-left: 15px;
-  height: 90px;
+  height: 90px; /*Esto *4 es 360 ===  cantidad d steps en animation y keyframe*/
   line-height: 90px;
   overflow: hidden;
 }
