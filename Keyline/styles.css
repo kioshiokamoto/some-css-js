@@ -1,0 +1,37 @@
+:root {
+	--color-dark: #1c2334;
+	--color-light: #fcf3e1;
+	--color-primary: #e9b44c;
+	--metric-keyline-gap: 1rem;
+}
+body {
+	display: grid;
+	place-items: center;
+	color: var(--color-dark);
+	background: var(--color-light);
+	font-family: 'Scope One', serif;
+	padding: 4rem 1.5rem;
+}
+.keyline {
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.2;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-gap: var(--metric-keyline-gap);
+	align-items: center;
+	width: 100%;
+}
+
+
+.keyline::before,
+.keyline::after {
+	content: '';
+	height: 2px;
+	background: var(--color-primary);
+	transform: translateY(-0.1em);
+}
+.keyline > * {
+	max-width: 35ch;
+}
