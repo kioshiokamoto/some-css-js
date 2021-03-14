@@ -1,0 +1,26 @@
+body {
+	background: #786ff0;
+}
+
+.titulo {
+	font: 3em Arial;
+	color: #fff;
+}
+
+.ripple {
+	width: 0;
+	height: 0;
+	background-color: transparent;
+	position: fixed;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+
+@keyframes ripple-effect {
+	to {
+		width: 150px;
+		height: 150px;
+		opacity: 0.01;
+		margin: -60px;
+	}
+}

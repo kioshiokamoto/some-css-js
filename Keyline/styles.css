@@ -7,8 +7,8 @@
 body {
 	display: grid;
 	place-items: center;
-	color: var(--color-dark);
-	background: var(--color-light);
+	color: var(--color-light);
+	background: var(--color-dark);
 	font-family: 'Scope One', serif;
 	padding: 4rem 1.5rem;
 }
