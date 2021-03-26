@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'poppins', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+.scroll-bar-wrapper {
+	width: 100%;
+	height: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #cccccc;
+}
+
+.scroll-bar {
+	width: 0;
+	height: inherit;
+	background: #0f2027;  /* Navegadores antiguos */
+	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient( 
+		to right,
+		#2c5364,
+		#203a43,
+		#0f2027
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
