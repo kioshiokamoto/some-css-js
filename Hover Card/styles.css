@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	height: 100vh;
+	width: 100%;
+	background-color: #afeeed;
+	display: flex;
+	justify-content: center;
+}
+.card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 0 20px;
+}
+
+.card .card-item {
+	position: relative;
+}
+.card img {
+	height: 250px;
+	width: 300px;
+	transition: all 0.4s ease-in-out;
+}
+
+.card-details {
+	position: absolute;
+	padding: 10px 5px;
+	bottom: 0px;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.card-details h1 {
+	font-size: 18px;
+	margin: 2px 0;
+}
+.card-details p {
+	font-size: 14px;
+}
+.card-item:hover .card-details {
+	opacity: 1;
+	bottom: 10px;
+}
+
+.card-item:hover img {
+	transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+	.card {
+		grid-template-columns: 1fr;
+		gap: 0 10px;
+	}
+	.container {
+		height: 210vh;
+	}
+}
