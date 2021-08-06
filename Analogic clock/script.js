@@ -1,5 +1,5 @@
 (function () {
-	var time = new Date(), //we get this time from our pc time not from server
+	var time = new Date(),
 		second = (time.getSeconds() / 60) * 360,
 		minute = (time.getMinutes() / 60) * 360 + (time.getSeconds() / 60) * 6,
 		hour = (time.getHours() / 12) * 360 + (time.getMinutes() / 60) * 30,
