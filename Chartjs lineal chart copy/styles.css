@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/* Fuentes:
+    - Montserrat
+    - Nunito
+    - Poppins
+    - Sora
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.myChartDiv {
+    max-width: 600px;
+    max-height: 400px;
+}
