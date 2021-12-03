@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #300b0d;
+}
+
+.bar {
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px 10px 20px 20px;
+  box-shadow: 3px 3px 0px 0px #7c2024;
+}
+
+.bar .bar-item {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+.bar .bar-item i {
+  z-index: 1;
+  position: relative;
+  color: #a4b0be;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar .bar-item.pre-active i {
+  color: #300b0d;
+}
+
+.bar .bar-item.active i {
+  color: #300b0d;
+  animation: colour 1s ease-in-out;
+}
+
+.bar .bar-item.active .bar-fluid {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #300b0d;
+  width: 100%;
+  height: 0px;
+  animation: fluid 1s ease-in-out;
+}
+
+.bar .bar-item.active .bar-fluid:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -50%;
+  background-color: #ffffff;
+  width: 110%;
+  height: 400%;
+  border-radius: 50%;
+}
+
+.bar .bar-item.active .bar-fluid:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -50%;
+  background-color: #ffffff;
+  width: 110%;
+  height: 400%;
+  border-radius: 50%;
+}
+
+.bar .bar-item.active .drop {
+  position: absolute;
+  top: -2.5px;
+  left: 30.5px;
+  background-color: #300b0d;
+  width: 2.5px;
+  height: 2.5px;
+  border-radius: 50%;
+  animation: drop 1s ease-in-out;
+}
+
+@keyframes colour {
+  0% {
+    color: #a4b0be;
+  }
+  55% {
+    color: #a4b0be;
+    transform: scale(1);
+  }
+  60% {
+    color: #300b0d;
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fluid {
+  0% {
+    height: 0px;
+  }
+  30% {
+    height: 15px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+@keyframes drop {
+  20% {
+    top: -2.5px;
+  }
+  50% {
+    top: 21px;
+  }
+  51% {
+    top: -2.5px;
+  }
+}
